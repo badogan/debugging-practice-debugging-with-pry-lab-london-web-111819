@@ -1,3 +1,7 @@
+require_relative '../first_priority/you_called'
+require 'pry'
+#require_relative 'you_called'
+#binding.pry
 class Person
   attr_accessor :name, :candy_lover
 
@@ -24,6 +28,8 @@ class Person
     else
       10.times do
         "not a ballin candy lover"
+      end
     end
   end
+  
 end
