@@ -19,10 +19,12 @@ def turtle_traits(turtles)
       result_inner << trait[index]  
       index +=1
       end
-      binding.pry
+      #binding.pry
     end
     result << result_inner
     result_inner =[]
   end
   result
 end
+
+p turtle_traits(turtles)
