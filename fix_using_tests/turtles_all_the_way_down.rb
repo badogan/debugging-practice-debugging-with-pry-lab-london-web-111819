@@ -19,4 +19,5 @@ def turtle_traits(turtles)
       result << trait
     end
   end
+  result
 end
