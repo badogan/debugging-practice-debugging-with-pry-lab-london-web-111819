@@ -15,8 +15,8 @@ def turtle_traits(turtles)
   result = []
   turtles.each do |turtle|
     turtle[:traits].map do |trait|
-      #binding.pry
       result << trait
+      binding.pry
     end
   end
   result
