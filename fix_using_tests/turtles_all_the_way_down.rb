@@ -16,8 +16,10 @@ def turtle_traits(turtles)
   turtles.each do |turtle|
     turtle[:traits].each do |trait|
       #binding.pry
-      result << trait
+      result_inner << trait
     end
+    result << result_inner
+    result_inner =[]
   end
   result
 end
