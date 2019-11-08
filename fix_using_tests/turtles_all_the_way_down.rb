@@ -12,10 +12,11 @@ end
 #binding.pry
 
 def turtle_traits(turtles)
+  result = []
   turtles.each do |turtle|
     turtle[:traits].map do |trait|
       binding.pry
-      [trait]
+      result << trait
     end
   end
 end
