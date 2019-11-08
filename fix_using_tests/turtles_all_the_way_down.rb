@@ -14,13 +14,15 @@ end
 def turtle_traits(turtles)
   result = [] ;  result_inner=[] ; index=0
   turtles.each do |turtle|
-    turtle[:traits].map do |trait|
+    turtle[:traits].each do |trait|
       while index < trait.length do
       result_inner << trait[index]  
       index +=1
       end
+      
       #binding.pry
     end
+    
     result << result_inner
     result_inner =[]
   end
